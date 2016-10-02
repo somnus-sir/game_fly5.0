@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 梯度渐变 -->
+        <!-- 梯度渐变 -->
+     <solid android:color="#57B1ED" /> 
+    
+
+    
+     <corners android:radius="7dp" />
+ 
+
+</shape>

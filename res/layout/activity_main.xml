@@ -1,0 +1,205 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <!-- 视图 420 -->
+
+    <RelativeLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15" >
+
+        <ImageView
+            android:id="@+id/blackiv"
+            android:layout_width="300px"
+            android:layout_height="300px" />
+
+        <ImageView
+            android:id="@+id/xingkong1"
+            android:layout_width="25px"
+            android:layout_height="25px"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/xingkong2"
+            android:layout_width="25px"
+            android:layout_height="25px"
+            android:layout_marginLeft="100dp" />
+
+        <ImageView
+            android:id="@+id/xingkong3"
+            android:layout_width="25px"
+            android:layout_height="25px"
+            android:layout_marginLeft="300dp" />
+
+        <ImageView
+            android:id="@+id/enemy1"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp" />
+
+        <ImageView
+            android:id="@+id/enemy2"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+        <ImageView
+            android:id="@+id/enemy3"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp" />
+
+        <ImageView
+            android:id="@+id/enemy4"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/enemy1" />
+
+        <ImageView
+            android:id="@+id/enemy5"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@id/enemy3" />
+
+        <ImageView
+            android:id="@+id/boss"
+            android:layout_width="400px"
+            android:layout_height="300px" />
+
+        <ImageView
+            android:id="@+id/lop_attach"
+            android:layout_width="100px"
+            android:layout_height="100px" />
+
+        <ImageView
+            android:id="@+id/trans"
+            android:layout_width="100px"
+            android:layout_height="100px" />
+
+        <ImageView
+            android:id="@+id/player"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300dp" />
+
+        <ImageView
+            android:id="@+id/attach"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp" />
+
+        <ImageView
+            android:id="@+id/boom"
+            android:layout_width="512px"
+            android:layout_height="338px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300dp" />
+
+        <ImageView
+            android:id="@+id/attach_anim"
+            android:layout_width="200px"
+            android:layout_height="200px" />
+
+        <ImageView
+            android:id="@+id/esp_attach"
+            android:layout_width="120px"
+            android:layout_height="120px" />
+    </RelativeLayout>
+
+    <!-- show -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="HP"
+            android:textColor="#996699"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/HP"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="bottom"
+            android:text="hp"
+            android:textColor="#996699"
+            android:textSize="25px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="40dp"
+            android:gravity="center"
+            android:text="分数"
+            android:textColor="#996699"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/sum"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="bottom"
+            android:text="sum"
+            android:textColor="#996699"
+            android:textSize="25px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="40dp"
+            android:gravity="center"
+            android:text="水晶"
+            android:textColor="#996699"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/sum_trans"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="bottom"
+            android:text="sum"
+            android:textColor="#996699"
+            android:textSize="25px" />
+
+        <Button
+            android:id="@+id/Boom"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/button2"
+            android:onClick="boom"
+            android:text="炸"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/boomsum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#996699"
+            android:textSize="25px" />
+    </LinearLayout>
+
+</LinearLayout>

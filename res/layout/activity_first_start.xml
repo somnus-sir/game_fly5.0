@@ -1,0 +1,31 @@
+<LinearLayout
+    android:id="@+id/bg" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/firstbg"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/startgame"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="380dp"   
+        android:background="#070E13"
+        android:textColor="#ffffff"
+        android:text="开始游戏" />
+    
+    
+   <Button
+        android:id="@+id/goongame"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#141517"
+        android:textColor="#ffffff"
+        android:text="继续游戏" />
+    
+
+</LinearLayout>
